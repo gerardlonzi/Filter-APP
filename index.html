@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIlterApp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+
+<!--------------- chargement----------------------->    
+    <div class="load">
+        <span class="lettre">C</span>
+        <span class="lettre">h</span>
+        <span class="lettre">a</span>
+        <span class="lettre">r</span>
+        <span class="lettre">g</span>
+        <span class="lettre">e</span>
+        <span class="lettre">m</span>
+        <span class="lettre">e</span>
+        <span class="lettre">n</span>
+        <span class="lettre">t </span>
+       
+<!-------------------------block image------------------------------------>
+    </div>
+    <div class="container">
+        <div class="block">
+            <input type="file"  id="input" accept="image/*" hidden>
+            <div class="image">
+
+            </div>
+            <div class="botton">
+                <button class="btn">Importer l'image</button>
+            </div>
+        </div>
+    <!--------------------block input-------------------------------------------->    
+        <div class="form">
+            <h1>Filter</h1>
+            <div class="push">
+                    <label for="blur">Blur</label>
+                    <input type="range" class="blur" name="blur" min="0" max="30" value="3">
+                    <label for="brightness">Brightness</label>
+                    <input type="range" class="brightness" name="brightness" min="0" max="5" value="1">
+                    <label for="contrast">Contrast</label>
+                    <input type="range" class="contrast" name="contrast" min="20"  max="1000" value="50">
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" class="grayscale" name="grayscale" min="0" value="50">
+                    <label for="hue-rotate">Hue-rotate</label>
+                    <input type="range" class="hue-rotate" name="hue-rotate" min="0" max="360" value="50">
+            
+                    <label for="invert">Invert</label>
+                    <input type="range" class="invert" name="invert" min="0" max="100" value="50">
+                    <label for="opacity">Opacity</label>
+                    <input type="range" class="opacity" name="opacity" min="0" max="100" value="50">
+                    <label for="saturate">Saturate</label>
+                    <input type="range" class="saturate" name="saturate" min="0" max="100" value="50">
+                    <label for="sepia">Sepia</label>
+                    <input type="range" class="sepia" name="sepia" min="0" max="100" value="50">
+            </div>   
+        </div> 
+    </div>
+<!------------------------------------block text-color et bgColor----------->    
+    <div class="raccord">
+        <div class="col-txt">
+            <label for="bgcolor">BacKground-color</label>
+            <input type="color" name="bgcolor" class="color">
+        </div>
+        <div class="col-txt">
+            <label for="text-color">Text-color</label>
+            <input type="color" name="text-color"  class="txt_color">
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
